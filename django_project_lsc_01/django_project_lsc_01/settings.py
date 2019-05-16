@@ -14,6 +14,14 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# print(BASE_DIR)
+# /home/python/Desktop/xiuxiuguai/Django_Exercise/django_project_lsc_01
+# print(os.path.abspath(__file__))
+# /home/python/Desktop/xiuxiuguai/Django_Exercise/django_project_lsc_01/django_project_lsc_01/settings.py
+# print(os.path.dirname(os.path.abspath(__file__)))
+# /home/python/Desktop/xiuxiuguai/Django_Exercise/django_project_lsc_01/django_project_lsc_01
+# print(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# /home/python/Desktop/xiuxiuguai/Django_Exercise/django_project_lsc_01
 
 
 # Quick-start development settings - unsuitable for production
@@ -118,7 +126,10 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
-
+#配置静态文件
+#1.静态资源的路径 static_url
 STATIC_URL = '/static/'
 
+#配置 静态资源的文件夹 路径 接收的是列表 list
 STATICFILES_DIRS=[os.path.join(BASE_DIR,'static_files')]
+

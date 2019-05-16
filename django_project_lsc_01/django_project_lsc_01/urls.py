@@ -15,12 +15,20 @@ Including another URLconf
 """
 from django.conf.urls import url,include
 from django.contrib import admin
-
-
+#导视图函数的包
+from Auser import views
 urlpatterns = [
+    #admin后台管理站点，系统自带的
     url(r'^admin/', admin.site.urls),
 
-    url(r'^Ausers/', include('Auser.urls')),
+    #1.总路由 ---子应用视图函数
+    # url(r'^login/', views.index),
 
-    url(r'^Busers/', include('Buser.urls')),
+    #2.总路由-子路由
+    url(r'^Ausers/', include('Auser.urls')),
+    #3.路由屏蔽-总路由-子路由
+    # 总路由起名 见名知意
+    url(r'^Busers/', include('Buser.urls',namespace="Busers")),
+
+
 ]

@@ -5,5 +5,8 @@ from django.conf.urls import url
 from .import views
 
 urlpatterns = [
-    url(r'^index/', views.index,name="ind"),
+
+    url(r'^Aindex_child/', views.indexChild,name="Ausers-son"),
+    url(r'^Aindex/', views.index),
+    url(r'^Aindex_xxg/', views.show_xxg),
 ]
