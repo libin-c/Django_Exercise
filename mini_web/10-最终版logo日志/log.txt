@@ -1,0 +1,2 @@
+2019-05-19 02:26:38,490 - mini_frame.py[line:251] - INFO: 访问的是：/centdddder.html
+2019-05-19 02:26:38,493 - mini_frame.py[line:267] - WARNING: 没有对应的函数秀秀怪哟
